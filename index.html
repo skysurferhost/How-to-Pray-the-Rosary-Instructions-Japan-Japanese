@@ -121,7 +121,7 @@
 <div class="toolbar">
   <button onclick="zoomOut()">−</button>
   <button onclick="zoomIn()">+</button>
-  <button onclick="toggleFullscreen()">⤢ Fullscreen</button>
+  <button onclick="toggleFullscreen()">⤢ フルスクリーン</button>
 </div>
 
 <div id="viewer-container">
@@ -307,7 +307,7 @@
       if (viewCenterY > r.yBottom) best = r.page;
     }
     currentPage = best;
-    indicator.textContent = `Page ${currentPage} / ${totalPages}`;
+    indicator.textContent = `${currentPage}/${totalPages}ページ`;
   }
 
   function scrollToPage(n) {
